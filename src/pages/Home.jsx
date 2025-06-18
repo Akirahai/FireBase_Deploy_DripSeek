@@ -65,10 +65,10 @@ const Home = () => {
       debugPreview.style.border = '2px solid red';
       debugPreview.style.background = 'white';
       debugPreview.style.padding = '5px';
-      debugPreview.innerHTML = `
-        <p>Screenshot Preview (removed in 5s)</p>
-        <img src="${imageData}" style="max-width: 200px; max-height: 200px;" />
-      `;
+      // debugPreview.innerHTML = `
+      //   <p>Screenshot Preview (removed in 5s)</p>
+      //   <img src="${imageData}" style="max-width: 200px; max-height: 200px;" />
+      // `;
       document.body.appendChild(debugPreview);
       setTimeout(() => document.body.removeChild(debugPreview), 5000);
       
